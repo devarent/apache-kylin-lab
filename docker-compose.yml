@@ -1,0 +1,10 @@
+services:
+  kylin:
+    image: apachekylin/apache-kylin-standalone:5.0.2-GA
+    container_name: kylin-lab
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:7070:7070"
+      - "127.0.0.1:8088:8088"
+      - "127.0.0.1:50070:50070"
+
